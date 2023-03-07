@@ -22,40 +22,40 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        ListBox1 = New ListBox()
-        btnRead = New Button()
+        lstOutput = New ListBox()
+        btnEOFRead = New Button()
         SuspendLayout()
         ' 
-        ' ListBox1
+        ' lstOutput
         ' 
-        ListBox1.FormattingEnabled = True
-        ListBox1.ItemHeight = 15
-        ListBox1.Location = New Point(61, 51)
-        ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(196, 334)
-        ListBox1.TabIndex = 0
+        lstOutput.FormattingEnabled = True
+        lstOutput.ItemHeight = 15
+        lstOutput.Location = New Point(12, 12)
+        lstOutput.Name = "lstOutput"
+        lstOutput.Size = New Size(196, 334)
+        lstOutput.TabIndex = 0
         ' 
-        ' btnRead
+        ' btnEOFRead
         ' 
-        btnRead.Location = New Point(492, 156)
-        btnRead.Name = "btnRead"
-        btnRead.Size = New Size(75, 23)
-        btnRead.TabIndex = 1
-        btnRead.Text = "Read"
-        btnRead.UseVisualStyleBackColor = True
+        btnEOFRead.Location = New Point(255, 170)
+        btnEOFRead.Name = "btnEOFRead"
+        btnEOFRead.Size = New Size(75, 23)
+        btnEOFRead.TabIndex = 3
+        btnEOFRead.Text = "EOF Read"
+        btnEOFRead.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(btnRead)
-        Controls.Add(ListBox1)
+        ClientSize = New Size(395, 361)
+        Controls.Add(btnEOFRead)
+        Controls.Add(lstOutput)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents btnRead As Button
+    Friend WithEvents lstOutput As ListBox
+    Friend WithEvents btnEOFRead As Button
 End Class
