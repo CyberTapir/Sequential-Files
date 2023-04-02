@@ -24,33 +24,47 @@ Partial Class Form1
     Private Sub InitializeComponent()
         lstOutput = New ListBox()
         btnEOFRead = New Button()
+        btnRead = New Button()
         SuspendLayout()
         ' 
         ' lstOutput
         ' 
         lstOutput.FormattingEnabled = True
-        lstOutput.ItemHeight = 15
-        lstOutput.Location = New Point(12, 12)
+        lstOutput.ItemHeight = 48
+        lstOutput.Location = New Point(34, 38)
+        lstOutput.Margin = New Padding(9, 10, 9, 10)
         lstOutput.Name = "lstOutput"
-        lstOutput.Size = New Size(196, 334)
+        lstOutput.Size = New Size(553, 1060)
         lstOutput.TabIndex = 0
         ' 
         ' btnEOFRead
         ' 
-        btnEOFRead.Location = New Point(255, 170)
+        btnEOFRead.Location = New Point(729, 544)
+        btnEOFRead.Margin = New Padding(9, 10, 9, 10)
         btnEOFRead.Name = "btnEOFRead"
-        btnEOFRead.Size = New Size(75, 23)
+        btnEOFRead.Size = New Size(214, 74)
         btnEOFRead.TabIndex = 3
         btnEOFRead.Text = "EOF Read"
         btnEOFRead.UseVisualStyleBackColor = True
         ' 
+        ' btnRead
+        ' 
+        btnRead.Location = New Point(685, 379)
+        btnRead.Name = "btnRead"
+        btnRead.Size = New Size(307, 69)
+        btnRead.TabIndex = 4
+        btnRead.Text = "Read First 10"
+        btnRead.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(20F, 48F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(395, 361)
+        ClientSize = New Size(1129, 1155)
+        Controls.Add(btnRead)
         Controls.Add(btnEOFRead)
         Controls.Add(lstOutput)
+        Margin = New Padding(9, 10, 9, 10)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
@@ -58,4 +72,5 @@ Partial Class Form1
 
     Friend WithEvents lstOutput As ListBox
     Friend WithEvents btnEOFRead As Button
+    Friend WithEvents btnRead As Button
 End Class
