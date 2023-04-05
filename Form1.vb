@@ -4,9 +4,11 @@ Public Class Form1
         Dim count As Integer
         Dim totalNum As Integer
         Dim temp As Integer
-        Dim average As Single
+        Dim average As Single ' Single is a Floating Point value
         FileSystem.FileOpen(1, "\\Mac\Home\Desktop\numberlist.txt", OpenMode.Input)
-        While Not EOF(1)
+        
+        ' This code applies to all of the values in the file
+        While Not EOF(1) ' EOF stands for End of File. While the end of the file has not been reached...
             FileSystem.Input(1, temp)
             lstOutput.Items.Add(temp)
             count = count + temp
@@ -18,6 +20,7 @@ Public Class Form1
         lstOutput.Items.Add("Average: " & average)
     End Sub
 
+    ' This code only reads the first ten items in the file, because of the For Next loop.
     Private Sub btnRead_Click(sender As Object, e As EventArgs) Handles btnRead.Click, btnRead.Click, btnRead.Click
         Dim tmp As Integer
         FileSystem.FileOpen(1, "\\Mac\Home\Desktop\numberlist.txt", OpenMode.Input)
